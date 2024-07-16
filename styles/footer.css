@@ -1,0 +1,22 @@
+footer {
+  background-color: var(--color-dim-gray);
+  color: var(--color-silver);
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+footer > img {
+  float: left;
+  height: 100%;
+  width: 150px;
+}
+
+.call_to_action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

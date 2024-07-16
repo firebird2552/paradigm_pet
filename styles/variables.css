@@ -1,0 +1,17 @@
+:root {
+  /* Primary Colors */
+  --color-midnight-blue: #003b6d;
+  --color-blue-sky: #6699cc;
+
+  /* Secondary Colors */
+  --color-dim-gray: #676767;
+  --color-silver: #bdbdbd;
+
+  /* Text Colors */
+  --color-text-primary: #000000; /* Assuming primary text color is black */
+  --color-text-secondary: #676767;
+
+  /* Background Colors */
+  --color-bg-primary: #ffffff; /* Assuming primary background color is white */
+  --color-bg-secondary: #f0f0f0;
+}

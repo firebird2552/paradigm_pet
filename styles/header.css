@@ -1,0 +1,148 @@
+header {
+  background-color: var(--color-midnight-blue);
+  color: var(--color-silver);
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.branding h1 {
+  text-emphasis: center;
+  padding: 0;
+}
+
+.header_container img {
+  width: 80px;
+  height: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav > button {
+  width: 100%;
+  background: none;
+  background-color: var(--color-midnight-blue);
+  color: var(--color-silver);
+}
+nav > ul#menu {
+  width: 100%;
+  display: none;
+}
+nav > ul#menu.open {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav ul > li {
+  width: auto;
+  height: auto;
+}
+
+nav ul > li > a {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  border: outset 1px var(--color-silver);
+}
+
+nav a {
+  color: var(--color-silver);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+nav a:hover {
+  background-color: var(--color-blue-sky);
+  color: var(--color-text-primary);
+}
+
+header a.active {
+  background-color: var(--color-blue-sky);
+  color: var(--color-text-primary);
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown_content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  min-width: 200px;
+  padding: 12px 16px;
+  background-color: var(--color-midnight-blue);
+  z-index: 1;
+  /* display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown_content a {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown_content a:hover {
+  background-color: var(--color-blue-sky);
+}
+
+/* Media Queries for Larger Screens */
+@media screen and (min-width: 768px) {
+  .header_container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  nav > ul.menu {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .dropdown_content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  nav > button {
+    display: none;
+  }
+  nav > ul#menu {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .dropdown > .dropdown_content {
+    display: none;
+  }
+}

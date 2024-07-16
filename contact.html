@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Paradigm Pet Professionals</title>
+    <link
+      rel="stylesheet"
+      href="styles/reset.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/variables.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/styles.css"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="scripts/includes.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header
+      id="header_placeholder"
+      class="header"
+    ></header>
+    <main>
+      <form class="consultation">
+        <div class="form_fields">
+          <fieldset class="information">
+            <legend>Pet information</legend>
+            <label for="pet_name">Pet Name</label>
+            <input
+              type="text"
+              id="pet_name"
+              name="pet_name"
+              placeholder="Fido"
+              required
+            />
+            <label for="pet_age">Age</label>
+            <input
+              id="pet_age"
+              name="pet_age"
+              placeholder="9001"
+              required
+            />
+            <label for="pet_type">Type</label>
+            <select
+              id="pet_type"
+              name="pet_type"
+              placeholder="Cat"
+              required
+            >
+              <option>Cat</option>
+              <option>Dog</option>
+              <option>Fish</option>
+              <option>Monkey</option>
+            </select>
+          </fieldset>
+          <fieldset class="information">
+            <legend>Hooman Information</legend>
+            <label for="hooman_name">Name</label>
+            <input
+              type="text"
+              id="hooman_name"
+              name="hooman_name"
+              placeholder="Jack Black"
+              required
+            />
+            <label for="phone_number">Phone Number (+1)</label>
+            <input
+              type="phone"
+              id="phone_number"
+              name="phone_number"
+              placeholder="999-867-5309"
+              required
+            />
+            <label for="email_address">Email Address</label>
+            <input
+              type="email"
+              id="email_address"
+              name="email_address"
+              placeholder="Poe.Panda@Kungfu.com"
+              required
+            />
+            <label for="timezone">Time Zone</label>
+            <select
+              id="timezone"
+              name="timezone"
+              required
+            >
+              <option value="America/Los_Angeles">Pacific</option>
+              <option value="America/Phoenix">Phoenix</option>
+              <option value="America/Denver">Mountain</option>
+              <option value="America/Chicago">Central</option>
+              <option value="America/Alaska">Alaska</option>
+              <option value="America/New_York">Eastern</option>
+              <option value="America/New_York">Hawaii</option>
+            </select>
+          </fieldset>
+        </div>
+        <fieldset id="buttons">
+          <legend>Buttons</legend>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer id="footer_placeholder"></footer>
+  </body>
+</html>
